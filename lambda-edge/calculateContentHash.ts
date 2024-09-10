@@ -12,7 +12,6 @@ export const handler: CloudFrontRequestHandler = async (
   _context,
 ) => {
   const request = event.Records[0].cf.request;
-  console.log("originalRequest", JSON.stringify(request));
 
   if (!request.body?.data) {
     return request;
@@ -25,7 +24,6 @@ export const handler: CloudFrontRequestHandler = async (
   request.headers["x-amz-content-sha256"] = [
     { key: "x-amz-content-sha256", value: await calculateHash(decodedBody) },
   ];
-  console.log("modifiedRequest", JSON.stringify(request));
 
   return request;
 };
