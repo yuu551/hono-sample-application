@@ -1,14 +1,6 @@
-# Welcome to your CDK TypeScript project
+# hono-sample-application Repository
 
-This is a blank project for CDK development with TypeScript.
+midosuji tech #2で発表したサンプルアプリケーションのレポジトリです。
+CDKで作成して、hono処理箇所は`lambda`フォルダ配下に格納しています。
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+実際に使われる際は`.env`に環境変数`API_KEY`を設定してください。
