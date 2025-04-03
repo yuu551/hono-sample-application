@@ -6,7 +6,7 @@
 
 ## システム構成図
 
-![CleanShot 2025-04-04 at 07.45.59@2x](./README.assets/CleanShot 2025-04-04 at 07.45.59@2x.png)
+![sample](./README.assets/sample.png)
 
 ## 技術スタック
 
